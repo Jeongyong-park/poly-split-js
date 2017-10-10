@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  },
+   "scripts": {
+    "build": "browserify src/polygon.js src/line.js src/vector.js -o index.js"
+  }
+}
