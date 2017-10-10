@@ -2,8 +2,7 @@
  * Created by jyp on 2016-05-16.
  */
 const Vector = require('./vector.js').Vector;
-
-var POLY_SPLIT_EPS = 1E-6;
+const POLY_SPLIT_EPS = 1E-6;
 function Line (a, b, c) {
     this.A=null;
     this.B=null;

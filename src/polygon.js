@@ -11,6 +11,7 @@ const V = require('./vector.js');
 const Vector = V.Vector;
 const Vectors = V.Vectors;
 const Line = require('./line.js');
+const POLY_SPLIT_EPS = 1E-6;
 function Polygon(v) {
   if (typeof v === 'undefined') {
     v = new Vectors();
