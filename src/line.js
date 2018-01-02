@@ -1,8 +1,8 @@
 /**
  * Created by jyp on 2016-05-16.
  */
-
-var POLY_SPLIT_EPS = 1E-6;
+const Vector = require('./vector.js').Vector;
+const POLY_SPLIT_EPS = 1E-6;
 function Line (a, b, c) {
     this.A=null;
     this.B=null;
@@ -235,3 +235,5 @@ Line.prototype.toString = function(){
 };
 Line.maximum = function(a, b){return (((a) < (b)) ? (b) : (a))};
 Line.minimum = function(a, b){return (((a) > (b)) ? (b) : (a))};
+
+module.exports = Line;

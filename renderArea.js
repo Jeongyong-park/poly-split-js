@@ -1,6 +1,7 @@
 /**
  * Created by jyp on 2016-05-19.
  */
+// import {Vector, Vectors, Polygon, Line} from './index.js'
 var polygons = new Array();
 var polygons_color = new Array();
 var squareToCut;
@@ -343,19 +344,15 @@ var keyPressEvent = function (e){
 var initPolygons= function(){
     polygons=new Array();
     polygons.push(new Polygon());
-
     polygons[0].push_back(new Vector(450.0, 100.0));
     polygons[0].push_back(new Vector(900.0, 100.0));
     polygons[0].push_back(new Vector(900.0, 400.0));
     polygons[0].push_back(new Vector(450.0, 400.0));
-
-
     polygons.push(new Polygon());
     polygons[1].push_back(new Vector(900.0, 420.0));
     polygons[1].push_back(new Vector(900.0, 600.0));
     polygons[1].push_back(new Vector(450.0, 600.0));
     polygons[1].push_back(new Vector(450.0, 420.0));
-
     squareToCut = polygons[0].countSquare() / 47.0;
     selectedPolygon = 0;
 };
