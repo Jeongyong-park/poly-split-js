@@ -1,12 +1,32 @@
 {
-	"name": "poly-split-js",
+  "name": "poly-split-js",
   "version": "0.0.5",
   "description": "Solving the problem of cutting a given polygon into any number of areas of given squares with a lines of minimal length",
   "main": "index.js",
-  "devDependencies": {
-    "browserify": "^14.4.0"
+  "license": "MIT",
+  "repository": {
+    "git": "https://github.com/kladess/poly-split-js"
   },
-   "scripts": {
-    "build": "browserify src/polygon.js src/line.js src/vector.js -o polygon_build.js"
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/runtime": "^7.6.0",
+    "babel-loader": "8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^6.4.0",
+    "path": "^0.12.7",
+    "webpack": "^4.40.2",
+    "webpack-dev-server": "^3.8.1"
   }
 }
