@@ -1,12 +1,7 @@
-const Vector = require('./vector').default;
-const Vectors = require('./vectors').default;
-const Line = require('./line').default;
-const Polygon = require('./polygon').default;
-const Polygons = require('./polygons').default;
+import Vector from "./vector";
+import Vectors from "./vectors";
+import Line from "./line";
+import Polygon from "./polygon";
+import Polygons from "./polygons";
 
-
-module.exports = Vector;
-module.exports = Vectors;
-module.exports = Line;
-module.exports = Polygon;
-module.exports = Polygons;
+export { Vector, Vectors, Line, Polygon, Polygons };

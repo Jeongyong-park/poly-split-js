@@ -1,44 +1,42 @@
+import Vector from "./vector";
 
 class Vectors {
+  constructor() {
+    this.arrVector = new Array();
 
+    this.clear = this.clear.bind(this);
+  }
 
-    constructor() {
-        this.arrVector = new Array();
+  clear() {
+    this.arrVector.clear();
+  }
 
-        this.clear = this.clear.bind(this);
-    }
+  push_back(v) {
+    if (!v instanceof Vector) throw new Error("param v was not Vector type");
+    this.arrVector.push(v);
+  }
 
-    clear = () => {
-        this.arrVector.clear();
-    }
+  get(idx) {
+    if (typeof idx === "number" && this.arrVector.length > idx)
+      return this.arrVector[idx];
+  }
 
-    push_back = v => {
-        if (!v instanceof Vector)
-            throw new Error("param v was not Vector type");
-        this.arrVector.push(v);
-    }
+  size() {
+    return this.arrVector.length;
+  }
 
-    get = idx => {
-        if (typeof idx === 'number' && this.arrVector.length > idx)
-            return this.arrVector[idx];
-    }
+  reverse() {
+    this.arrVector.reverse();
+  }
 
-    size = () => {
-        return this.arrVector.length;
-    }
+  isEmpty() {
+    return this.arrVector.length === 0 ? true : false;
+  }
 
-    reverse = () => {
-        this.arrVector.reverse();
-    }
-
-    isEmpty = () => {
-        return this.arrVector.length === 0 ? true : false;
-    }
-
-    insert = (index, vector) => {
-        if (!vector instanceof Vector)
-            throw new Error("param vector was not Vector type");
-        this.arrVector.splice(index, 0, vector);
-    }
+  insert(index, vector) {
+    if (!vector instanceof Vector)
+      throw new Error("param vector was not Vector type");
+    this.arrVector.splice(index, 0, vector);
+  }
 }
 export default Vectors;
