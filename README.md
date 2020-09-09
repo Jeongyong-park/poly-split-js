@@ -13,7 +13,8 @@ original cpp and Qt Source is https://github.com/dhmhd/poly-split
 original algorithm: http://www.khetarpal.org/polygon-splitting/
 
 ## live demo
-http://kladess.github.io/poly-split-js/demo.html
+http://chisquare88.github.io/poly-split-js/demo.html
+
 
 
 ## run
@@ -32,7 +33,5 @@ $ yarn start
 ```
 
 
-
 ## Licence
 Licensed under the MIT license.
-
