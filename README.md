@@ -1,4 +1,5 @@
 # poly-split-js
+Solving the problem of cutting a given polygon into any number of areas of given squares with a lines of minimal length
 
 ## Synopsis
 Polygon split for javscript/html5 canvas.
