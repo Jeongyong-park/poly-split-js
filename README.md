@@ -1,8 +1,3 @@
-[![Build status][nix-build-image]][nix-build-url]
-[![Windows status][win-build-image]][win-build-url]
-![Transpilation status][transpilation-image]
-[![npm version][npm-image]][npm-url]
-
 # poly-split-js
 
 ## Synopsis
@@ -13,7 +8,7 @@ original cpp and Qt Source is https://github.com/dhmhd/poly-split
 original algorithm: http://www.khetarpal.org/polygon-splitting/
 
 ## live demo
-http://chisquare88.github.io/poly-split-js/demo.html
+http://chisquare88.github.io/poly-split-js-es6/demo.html
 
 
 
