@@ -2,7 +2,7 @@
     "name": "poly-split-js",
     "version": "0.0.5",
     "description": "Solving the problem of cutting a given polygon into any number of areas of given squares with a lines of minimal length",
-    "main": "index.js",
+    "main": "src/index.js",
     "devDependencies": {
         "parcel": "^1.12.4"
     },
