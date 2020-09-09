@@ -1,12 +1,12 @@
 {
-	"name": "poly-split-js",
-  "version": "0.0.5",
-  "description": "Solving the problem of cutting a given polygon into any number of areas of given squares with a lines of minimal length",
-  "main": "index.js",
-  "devDependencies": {
-    "browserify": "^14.4.0"
-  },
-   "scripts": {
-    "build": "browserify src/polygon.js src/line.js src/vector.js -o polygon_build.js"
-  }
+    "name": "poly-split-js",
+    "version": "0.0.5",
+    "description": "Solving the problem of cutting a given polygon into any number of areas of given squares with a lines of minimal length",
+    "main": "index.js",
+    "devDependencies": {
+        "parcel": "^1.12.4"
+    },
+    "scripts": {
+        "start": "parcel  ./app/demo.html --open "
+    }
 }
