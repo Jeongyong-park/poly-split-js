@@ -11,7 +11,7 @@ original algorithm: http://www.khetarpal.org/polygon-splitting/
 ## live demo
 http://chisquare88.github.io/poly-split-js-es6/demo.html
 
-
+![example](example.gif)
 
 ## run
 In the project directory, you can run:
