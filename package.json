@@ -2,11 +2,17 @@
     "name": "poly-split-js",
     "version": "0.0.5",
     "description": "Solving the problem of cutting a given polygon into any number of areas of given squares with a lines of minimal length",
-    "main": "src/index.js",
+    "main": "src/index.html",
+    "license": "MIT",
     "devDependencies": {
-        "parcel": "^1.12.4"
+        "parcel": "^2.0.0-beta.2"
     },
     "scripts": {
-        "start": "parcel  ./app/demo.html --open "
+        "start": "parcel  ./app/index.html --open ",
+        "build": "parcel build ./app/index.html",
+        "deploy": "yarn run build && gh-pages -d dist -b gh-pages"
+    },
+    "dependencies": {
+        "gh-pages": "^3.2.0"
     }
 }

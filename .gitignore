@@ -1,11 +1,7 @@
-/node_modules/**
-/.cache/**
-/.vscode/**
-yarn.lock
+.cache/**
+.vscode/**
 **.log
-/.cache/**
-/.vscode/**
-/node_modules/**
-/dist/**
-
-yarn.lock
+node_modules
+dist
+.parcel-cache
+.DS_Store
