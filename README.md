@@ -9,7 +9,7 @@ original cpp and Qt Source is https://github.com/dhmhd/poly-split
 original algorithm: http://www.khetarpal.org/polygon-splitting/
 
 ## live demo
-http://chisquare88.github.io/poly-split-js-es6/demo.html
+https://jypark.pe.kr/poly-split-js/
 
 ![example](example.gif)
 
